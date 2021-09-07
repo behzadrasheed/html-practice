@@ -5,68 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            font-family: Verdana;
-            color: #aaaaaa;
-        }   
-        .menu{
-            float: left;
-            width: 20%;
+        .heading{
+            background-color:wheat;
+            color: slategray;
             text-align: center;
+            padding: 7px;
         }
-        .menu a{
-            display: block;
-            background-color: #e5e5e5;
-            padding: 8px;
-            margin-top: 7px;
-            width: 100%;
-            color: black;
-        }
-        .header{
-            text-align: center;
-            background-color: #e5e5e5;
-            padding: 15px;
-        }
-        .main{
-            float: left; 
-            width: 60%;
-            padding: 0 20px;
-        }
-        .left{
-            float:  left;
-             background-color: #e5e5e5;
-             width: 16%;
-             padding: 15px;
-             margin-top:7px;
-             text-align: center;
-        }
-
     </style>
 </head>
-<body  style="font-family:Verdana;color:#aaaaaa;"   >
-    <div class="header">
-        <h1>HELLO WORLD!</h1>
+<body>
+    <div class="heading">
+        <h1>SUBMISSION FORM</h1>
     </div>
-    <div class="section"  style="overflow:auto">
-        <div class="menu">
-            <a href="<#">HOME</a>
-            <a href="#">MENU</a>
-            <a href="#">CARRERS</a>
-            <a href="#">SERVICES</a>
-        </div>
-        <div class="main">
-            <h2>Lorum Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-        </div>
-        <div class="left">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div>
-    </div>
-    <div class="footer" style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
-        © copyright w3schools.com
-    </div>
+   <form style="margin-top:7px ;" action="/action_page.php" >
+       <label for="fname">First Name:</label><br>
+       <input type="text" id="fname" name="fname" value="John"><br>
+       <label for="lname">Last Name:</label><br>
+       <input type="text" id="lname" name="lname" value="Smith"><br>    
+       <label for="select technology">Choose One</label><br>
+       <input type="radio"  id="select technology" name="select technology" value="React">
+       <label for="react">React</label><br>       
+       <input type="radio"  id="select technology" name="select technology" value="Node Js">
+       <label for="react">Node Js</label><br>       
+       <input type="radio"  id="select technology" name="select technology" value="Ruby On Rails">
+       <label for="react">Ruby On Rails</label><br>
+       <input type="submit" value="Submit">
+   </form>
     
 </body>
 </html>
