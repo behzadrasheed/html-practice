@@ -11,26 +11,56 @@
             text-align: center;
             padding: 7px;
         }
+        option:hover{
+            background-color: grey;
+        }
+        #field1{
+             border: 2  px solid black;
+             border-radius: 10px;
+
+        }
+
     </style>
 </head>
 <body>
     <div class="heading">
         <h1>SUBMISSION FORM</h1>
     </div>
-   <form style="margin-top:7px ;" action="/action_page.php" >
-       <label for="fname">First Name:</label><br>
-       <input type="text" id="fname" name="fname" value="John"><br>
-       <label for="lname">Last Name:</label><br>
-       <input type="text" id="lname" name="lname" value="Smith"><br>    
-       <label for="select technology">Choose One</label><br>
-       <input type="radio"  id="select technology" name="select technology" value="React">
-       <label for="react">React</label><br>       
-       <input type="radio"  id="select technology" name="select technology" value="Node Js">
-       <label for="react">Node Js</label><br>       
-       <input type="radio"  id="select technology" name="select technology" value="Ruby On Rails">
-       <label for="react">Ruby On Rails</label><br>
-       <input type="submit" value="Submit">
-   </form>
+    <p id="demo">Please Select Your Education Level</p>
+    <form action="" autocomplete="on" novalidate>
+        <fieldset id="field1">
+            <legend>EDUCATION</legend>
+            <label for="Bachelors">Bachelors</label><br>
+            <select name="degree_list" id="degree_list">
+                <option value="SE" >SE</option>
+                <option value="cs"sele  cted>CS</option>
+                <option value="IT">IT</option>
+            </select>
+        </fieldset>
+    </form>
+    <button type="button" onclick="checkEducation(1)"> SUBMIT</button>
+    <script>
+        function checkEducation(value)
+        {
+            if(value==1)
+            {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOU HAVE SELECTED EDUCATION LEVEL SUCCESSFULLY";
+                document.getElementById("demo").style.fontSize = "20 px";
+                document.getElementById("demo").style.backgroundColor = "red";
+                document.getElementById("demo").style.display = "block";
+                document.getElementById("demo").style.width = "100%"
+                document.getElementById("demo").style.tex\
+                 = "red";
+
+
+                alert('Your  data has ben submitted!!')
+                
+            }
+            else{
+                alert('Please Submit Your Data...')
+            }
+        }
+    </script>
     
 </body>
 </html>
