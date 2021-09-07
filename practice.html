@@ -8,15 +8,47 @@
         * {
             font-family: Verdana;
             color: #aaaaaa;
+        }   
+        .menu{
+            float: left;
+            width: 20%;
+            text-align: center;
         }
+        .menu a{
+            display: block;
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            width: 100%;
+            color: black;
+        }
+        .header{
+            text-align: center;
+            background-color: #e5e5e5;
+            padding: 15px;
+        }
+        .main{
+            float: left; 
+            width: 60%;
+            padding: 0 20px;
+        }
+        .left{
+            float:  left;
+             background-color: #e5e5e5;
+             width: 16%;
+             padding: 15px;
+             margin-top:7px;
+             text-align: center;
+        }
+
     </style>
 </head>
 <body  style="font-family:Verdana;color:#aaaaaa;"   >
     <div class="header">
         <h1>HELLO WORLD!</h1>
     </div>
-    <div class="section">
-        <div class="left">
+    <div class="section"  style="overflow:auto">
+        <div class="menu">
             <a href="<#">HOME</a>
             <a href="#">MENU</a>
             <a href="#">CARRERS</a>
@@ -31,10 +63,10 @@
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </div>
-
     </div>
-    <div class="footer">
-
+    <div class="footer" style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+        © copyright w3schools.com
     </div>
+    
 </body>
 </html>
